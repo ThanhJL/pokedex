@@ -1,0 +1,41 @@
+*{
+    background-color: #800303;
+    padding: 10px;
+    text-align: center;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+
+    &>div{
+        border: 1px solid black;
+        padding: 20px;
+        border-radius: 10px;
+
+        img{
+            max-height: 300px;
+        }
+
+        .types{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .type{
+                display: flex;
+                flex-direction: column;
+
+                img{
+                    height: 100px;
+                    width: 100px;
+                }
+
+                h4{
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
